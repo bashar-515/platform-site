@@ -1,3 +1,5 @@
 #!/bin/bash
 
-mkdir -p public && envsubst < src/index.html > public/index.html
+BUILD_DIR="dist"
+
+mkdir -p $BUILD_DIR && envsubst < src/index.html > $BUILD_DIR/index.html
